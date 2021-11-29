@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/movieItemRelativeLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movieCard"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#1C1C1C"
+        android:outlineSpotShadowColor="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+
+        >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moviePosterSmall"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_margin="10dp"
+        />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie Name \n"
+        android:id="@+id/movieName"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/movieCard"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popularity: "
+        android:id="@+id/moviePopularity"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/movieCard"
+        android:layout_below="@id/movieName"
+        android:textSize="10sp"
+        android:layout_marginStart="20dp"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/divider"
+        android:background="@color/dividergrey"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/movieCard"
+        />
+
+</RelativeLayout>

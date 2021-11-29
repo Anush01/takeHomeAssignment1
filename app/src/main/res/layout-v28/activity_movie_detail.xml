@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".views.MovieDetailActivity">
+
+    <!--
+
+Synopsis
+Genres
+Language
+Duration
+Book the movie (simulate the opening of this link in a web view)
+
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MovieDetailTitle"
+        android:text="The Avengers"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:background="@color/bggrey"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:outlineSpotShadowColor="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:elevation="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MovieDetailSynopsis"
+        android:text="Synopsis \n"
+        android:textSize="20sp"
+        android:layout_below="@id/MovieDetailTitle"
+        android:textColor="@color/white"
+        android:background="@color/bggrey"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:outlineSpotShadowColor="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:elevation="8dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MovieDetailGenres"
+        android:text="Genres \n"
+        android:textSize="20sp"
+        android:layout_below="@id/MovieDetailSynopsis"
+        android:textColor="@color/white"
+        android:background="@color/bggrey"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:outlineSpotShadowColor="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:elevation="8dp"
+        />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MovieDetailLanguage"
+        android:text="Language \n"
+        android:textSize="20sp"
+        android:layout_below="@id/MovieDetailGenres"
+        android:textColor="@color/white"
+        android:background="@color/bggrey"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+            android:outlineSpotShadowColor="@color/white"
+            android:outlineAmbientShadowColor="@color/white"
+            android:elevation="8dp"
+        />
+
+        <TextView
+            android:id="@+id/MovieDetailDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/MovieDetailLanguage"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/bggrey"
+            android:elevation="8dp"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"
+            android:padding="10dp"
+            android:text="Duration \n"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BookMovieButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MovieDetailDuration"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFC107"
+            app:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+            app:iconTint="@color/black"
+            app:iconGravity="textEnd"
+            app:cornerRadius="30dp"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:text="Book Movie"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
